@@ -1,22 +1,9 @@
-
-import time
 from datetime import datetime
 
-LOG_FILE = "log.txt"
+now = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+message = f"[{now}] Hello from Railway cron job!\n"
 
-while True:
-    # Get current date and time
-    now = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+print(message.strip())
 
-    # Create a message
-    message = f"[{now}] Hello from Railway cron job!\n"
-
-    # Print to console
-    print(message.strip())
-
-    # Write to log file
-    with open(LOG_FILE, "a") as f:
-        f.write(message)
-
-    # Wait 5 seconds
-    time.sleep(5)
+with open("log.txt", "a") as f:
+    f.write(message)
