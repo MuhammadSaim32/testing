@@ -6,7 +6,7 @@ export function BackgroundBeamsDemo() {
   return (
     <div className="relative w-full py-20 bg-black text-white overflow-hidden font-serif">
       {/* Background beams - brighter and more visible */}
-      <BackgroundBeams className="brightness-140 opacity-60" />
+      <BackgroundBeams className="brightness-150 opacity-100" />
 
       {/* Content */}
 
