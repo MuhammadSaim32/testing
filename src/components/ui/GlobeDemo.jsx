@@ -414,8 +414,8 @@ export function GlobeDemo() {
         >
           <div className="w-full h-[50vh] md:h-[70vh] lg:h-[90vh]">
             <World
-              data={shopArc}
-              globeConfig={{ ...globeConfig, autoRotate: false }}
+              data={sampleArcs}
+              globeConfig={{ ...globeConfig, autoRotate: true }}
             />
           </div>
         </Suspense>
@@ -433,7 +433,7 @@ export function GlobeDemo() {
           Visit Our Shop
         </h2>
         <p className="text-lg md:text-2xl text-gray-300 mt-4 max-w-xl">
-          We are located at{" "}
+          We are located at
           <strong className="text-yellow-500">
             Al-Java Center, Faisalabad
           </strong>
